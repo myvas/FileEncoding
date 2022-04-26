@@ -3,7 +3,8 @@
 [中文](./README.zh.md) | English
 
 ## What's this?
-This Visual Studio Extensions (vsix) will display the charset of current document at the right bottom margin of the editor; You can change to another encoding by click on the button.
+This Visual Studio Extensions (vsix) will display the charset of current document at the right bottom margin of the editor; Click to convert to your choice.
+It's a Visual Studio Extension, show text file encoding at editor right bottom corner, click button to convert encoding.
 
 **NOTES**:
 1. The file's modification status will be changed to dirty, since you'd changed the encoding of the file.
@@ -14,7 +15,7 @@ This Visual Studio Extensions (vsix) will display the charset of current documen
 ![Preview](docs/screenshots/Preview.png?raw=true "Preview")
 
 NOTES:
-- **UTF-8** (without [BOM](http://en.wikipedia.org/wiki/Byte_order_mark))
+- **UTF-8** (without [BOM](https://docs.microsoft.com/en-us/globalization/encoding/byte-order-mark))
     - `html`|`xhtml`|`_Layout.cshtml`: It is not necessary to use a BOM if a output template has already pointed out its `charset=utf-8`.
     - `PHP`: In case of PHP files are usually as a template to output, it is not a good idea to save PHP files with the BOM at the beginning. Do not add BOM to a script file that cannot be correctly processed by its interpretor. 
     - `JSON`: Implementations must not add a **byte order mark** to the beginning of a JSON text. [[RFC 7159, Section 8.1]](https://www.rfc-editor.org/rfc/rfc7159#section-8.1) 
@@ -27,7 +28,7 @@ NOTES:
 **DISCUSS**: There are more and more new characters (e.g. emoji) appear in the comments, resources and elsewhere of soruce codes; An efficient and safe convention of interpreting a file into a human friendly visible artifact is required and more and more important in the future; The Unicode BOM is already an accept standard, so why people 'refuse' to use it? 
  
 ## License
-[MIT](LICENSE.txt)
+[MIT License](LICENSE.txt)
 
 ```
 Copyright (c) 2021 genrwoody
