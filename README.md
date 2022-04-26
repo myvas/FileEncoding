@@ -3,12 +3,11 @@
 [中文](./README.zh.md) | English
 
 ## What's this?
-This Visual Studio Extensions (vsix) will display the charset of current document at the right bottom margin of the editor; Click to convert to your choice.
-It's a Visual Studio Extension, show text file encoding at editor right bottom corner, click button to convert encoding.
+This Visual Studio Extensions (vsix) will display the charset of current document at the right bottom margin of the editor; You can change to another encoding by click on the button.
 
 **NOTES**:
-1. The file's modification status will be keep as the same as before. That means: if you select a different encoding to a dirty file, the file will be keep dirty; otherwise it will be automatically saved after changing the encoding.
-2. UTF-8 as default: When the encoding could be regarded as both utf8 and the default locale encoding (e.g. `GB2312`), but we would like to display it as `UTF-8` instead of the default. So we always change the encoding from default to `UTF-8`.
+1. The file's modification status will be changed to dirty, since you'd changed the encoding of the file.
+2. UTF-8 as default: When the encoding could be regarded as both UTF-8 and the locale default encoding (e.g. `GB2312`), this app will take it as `UTF-8` instead of the locale default.
 
 ## Screenshots
 
