@@ -17,9 +17,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{9DA5C298-1CA0-4A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{70C55713-79A1-4163-B513-D365607C682E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEncoding", "src\FileEncoding\FileEncoding.csproj", "{5DA3ECF3-5C2B-44FB-B98F-88C2B9966240}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FileEncoding.Shared", "src\FileEncoding.Shared\FileEncoding.Shared.shproj", "{8AC3A475-6792-4516-8D57-B9E17741B5F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEncoding.Vsix2019", "src\FileEncoding.Vsix2019\FileEncoding.Vsix2019.csproj", "{06B76B1F-9485-4B9F-9E35-438CA49F74C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEncoding.Vsix2022", "src\FileEncoding.Vsix2022\FileEncoding.Vsix2022.csproj", "{5DA3ECF3-5C2B-44FB-B98F-88C2B9966240}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		src\FileEncoding.Shared\FileEncoding.Shared.projitems*{06b76b1f-9485-4b9f-9e35-438ca49f74c0}*SharedItemsImports = 4
+		src\FileEncoding.Shared\FileEncoding.Shared.projitems*{5da3ecf3-5c2b-44fb-b98f-88c2b9966240}*SharedItemsImports = 4
+		src\FileEncoding.Shared\FileEncoding.Shared.projitems*{8ac3a475-6792-4516-8d57-b9e17741b5f4}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
@@ -27,6 +36,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06B76B1F-9485-4B9F-9E35-438CA49F74C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06B76B1F-9485-4B9F-9E35-438CA49F74C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06B76B1F-9485-4B9F-9E35-438CA49F74C0}.Debug|x86.ActiveCfg = Debug|x86
+		{06B76B1F-9485-4B9F-9E35-438CA49F74C0}.Debug|x86.Build.0 = Debug|x86
+		{06B76B1F-9485-4B9F-9E35-438CA49F74C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06B76B1F-9485-4B9F-9E35-438CA49F74C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06B76B1F-9485-4B9F-9E35-438CA49F74C0}.Release|x86.ActiveCfg = Release|x86
+		{06B76B1F-9485-4B9F-9E35-438CA49F74C0}.Release|x86.Build.0 = Release|x86
 		{5DA3ECF3-5C2B-44FB-B98F-88C2B9966240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5DA3ECF3-5C2B-44FB-B98F-88C2B9966240}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DA3ECF3-5C2B-44FB-B98F-88C2B9966240}.Debug|x86.ActiveCfg = Debug|x86
@@ -40,6 +57,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{8AC3A475-6792-4516-8D57-B9E17741B5F4} = {70C55713-79A1-4163-B513-D365607C682E}
+		{06B76B1F-9485-4B9F-9E35-438CA49F74C0} = {70C55713-79A1-4163-B513-D365607C682E}
 		{5DA3ECF3-5C2B-44FB-B98F-88C2B9966240} = {70C55713-79A1-4163-B513-D365607C682E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
