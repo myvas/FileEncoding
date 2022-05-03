@@ -5,8 +5,12 @@
 ## What's this?
 This Visual Studio Extension will display the charset of current document at the right bottom margin of the editor; Click to popup a contextual menu with a list of encodings and choose the encoding that you want to convert the document to.
 
+Multi-targeting:
+- Visual Studio 2022 (17.x)
+- Visual Studio 2019 (16.x)
+
 **NOTES**:
-1. The file's modification status will be changed to dirty, since you'd changed the encoding of the file.
+1. The file's modification status will be changed to `dirty` (aka Modified), since you'd changed the encoding of the file.
 2. UTF-8 as default: When the encoding could be regarded as both UTF-8 and the locale default encoding (e.g. `GB2312`), this app will take it as `UTF-8` instead of the locale default.
 
 ## Screenshots
