@@ -1,6 +1,6 @@
 # FileEncoding
 
-[中文](./README.zh.md) | English
+[中文](README.zh.md) | English
 
 ## What's this?
 This Visual Studio Extension will display the charset of current document at the right bottom margin of the editor; Click to popup a contextual menu with a list of encodings and choose the encoding that you want to convert the document to.
@@ -15,7 +15,7 @@ Multi-targeting:
 
 ## Screenshots
 
-![Preview](docs/screenshots/Preview.png?raw=true "Preview")
+![Preview](Preview.png "Preview")
 
 NOTES:
 - **UTF-8** (without [BOM](https://docs.microsoft.com/en-us/globalization/encoding/byte-order-mark))
@@ -28,12 +28,12 @@ NOTES:
         1. BOM is actually the most efficient way of identifying an UTF-8 file.
         2. Most modern applications and standards support and encourage the use of BOM.
         
-**DISCUSS**: There are more and more new characters (e.g. emoji) appear in the comments, resources and elsewhere of soruce codes; An efficient and safe convention of interpreting a file into a human friendly visible artifact is required and more and more important in the future; The Unicode BOM is already an accept standard, so why people 'refuse' to use it? 
- 
 ## License
-[MIT License](LICENSE.txt)
-
+[MIT License](LICENSE.txt)  
 ```
 Copyright (c) 2021 genrwoody
 Copyright (c) 2022 Myvas Foundation
-```
+```  
+This repo was forked from _FileEncoding_ by **genrwoody**;  This release version solved an issue of confusing display for locale encoding and re-publish by Myvas Foundation.
+
+See [README](https://github.com/myvas/FileEncoding) for details.

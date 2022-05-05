@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.1.32328.378
+VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{9DA5C298-1CA0-4A07-BAB1-0FE42C2C3153}"
 	ProjectSection(SolutionItems) = preProject
@@ -19,15 +19,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{70C55713-79A
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FileEncoding.Shared", "src\FileEncoding.Shared\FileEncoding.Shared.shproj", "{8AC3A475-6792-4516-8D57-B9E17741B5F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEncoding.Vsix2019", "src\FileEncoding.Vsix2019\FileEncoding.Vsix2019.csproj", "{06B76B1F-9485-4B9F-9E35-438CA49F74C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEncoding", "src\FileEncoding\FileEncoding.csproj", "{7CBFE2DC-B573-47F5-B746-7E2217982965}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEncoding.Vsix2022", "src\FileEncoding.Vsix2022\FileEncoding.Vsix2022.csproj", "{5DA3ECF3-5C2B-44FB-B98F-88C2B9966240}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEncodingVS2019", "src\FileEncodingVS2019\FileEncodingVS2019.csproj", "{BA497A0C-1D9B-4189-8AAA-5C99BCE5B1B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEncodingVS2022", "src\FileEncodingVS2022\FileEncodingVS2022.csproj", "{5DA3ECF3-5C2B-44FB-B98F-88C2B9966240}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEncodingVS2017", "src\FileEncodingVS2017\FileEncodingVS2017.csproj", "{1697853E-15E9-4BAB-91E8-F197C4C9EEC6}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		src\FileEncoding.Shared\FileEncoding.Shared.projitems*{06b76b1f-9485-4b9f-9e35-438ca49f74c0}*SharedItemsImports = 4
+		src\FileEncoding.Shared\FileEncoding.Shared.projitems*{1697853e-15e9-4bab-91e8-f197c4c9eec6}*SharedItemsImports = 4
 		src\FileEncoding.Shared\FileEncoding.Shared.projitems*{5da3ecf3-5c2b-44fb-b98f-88c2b9966240}*SharedItemsImports = 4
+		src\FileEncoding.Shared\FileEncoding.Shared.projitems*{7cbfe2dc-b573-47f5-b746-7e2217982965}*SharedItemsImports = 4
 		src\FileEncoding.Shared\FileEncoding.Shared.projitems*{8ac3a475-6792-4516-8d57-b9e17741b5f4}*SharedItemsImports = 13
+		src\FileEncoding.Shared\FileEncoding.Shared.projitems*{ba497a0c-1d9b-4189-8aaa-5c99bce5b1b4}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,14 +42,22 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{06B76B1F-9485-4B9F-9E35-438CA49F74C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06B76B1F-9485-4B9F-9E35-438CA49F74C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06B76B1F-9485-4B9F-9E35-438CA49F74C0}.Debug|x86.ActiveCfg = Debug|x86
-		{06B76B1F-9485-4B9F-9E35-438CA49F74C0}.Debug|x86.Build.0 = Debug|x86
-		{06B76B1F-9485-4B9F-9E35-438CA49F74C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{06B76B1F-9485-4B9F-9E35-438CA49F74C0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{06B76B1F-9485-4B9F-9E35-438CA49F74C0}.Release|x86.ActiveCfg = Release|x86
-		{06B76B1F-9485-4B9F-9E35-438CA49F74C0}.Release|x86.Build.0 = Release|x86
+		{7CBFE2DC-B573-47F5-B746-7E2217982965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CBFE2DC-B573-47F5-B746-7E2217982965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CBFE2DC-B573-47F5-B746-7E2217982965}.Debug|x86.ActiveCfg = Debug|x86
+		{7CBFE2DC-B573-47F5-B746-7E2217982965}.Debug|x86.Build.0 = Debug|x86
+		{7CBFE2DC-B573-47F5-B746-7E2217982965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CBFE2DC-B573-47F5-B746-7E2217982965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CBFE2DC-B573-47F5-B746-7E2217982965}.Release|x86.ActiveCfg = Release|x86
+		{7CBFE2DC-B573-47F5-B746-7E2217982965}.Release|x86.Build.0 = Release|x86
+		{BA497A0C-1D9B-4189-8AAA-5C99BCE5B1B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA497A0C-1D9B-4189-8AAA-5C99BCE5B1B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA497A0C-1D9B-4189-8AAA-5C99BCE5B1B4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BA497A0C-1D9B-4189-8AAA-5C99BCE5B1B4}.Debug|x86.Build.0 = Debug|Any CPU
+		{BA497A0C-1D9B-4189-8AAA-5C99BCE5B1B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA497A0C-1D9B-4189-8AAA-5C99BCE5B1B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA497A0C-1D9B-4189-8AAA-5C99BCE5B1B4}.Release|x86.ActiveCfg = Release|Any CPU
+		{BA497A0C-1D9B-4189-8AAA-5C99BCE5B1B4}.Release|x86.Build.0 = Release|Any CPU
 		{5DA3ECF3-5C2B-44FB-B98F-88C2B9966240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5DA3ECF3-5C2B-44FB-B98F-88C2B9966240}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DA3ECF3-5C2B-44FB-B98F-88C2B9966240}.Debug|x86.ActiveCfg = Debug|x86
@@ -52,14 +66,24 @@ Global
 		{5DA3ECF3-5C2B-44FB-B98F-88C2B9966240}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5DA3ECF3-5C2B-44FB-B98F-88C2B9966240}.Release|x86.ActiveCfg = Release|x86
 		{5DA3ECF3-5C2B-44FB-B98F-88C2B9966240}.Release|x86.Build.0 = Release|x86
+		{1697853E-15E9-4BAB-91E8-F197C4C9EEC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1697853E-15E9-4BAB-91E8-F197C4C9EEC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1697853E-15E9-4BAB-91E8-F197C4C9EEC6}.Debug|x86.ActiveCfg = Debug|x86
+		{1697853E-15E9-4BAB-91E8-F197C4C9EEC6}.Debug|x86.Build.0 = Debug|x86
+		{1697853E-15E9-4BAB-91E8-F197C4C9EEC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1697853E-15E9-4BAB-91E8-F197C4C9EEC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1697853E-15E9-4BAB-91E8-F197C4C9EEC6}.Release|x86.ActiveCfg = Release|x86
+		{1697853E-15E9-4BAB-91E8-F197C4C9EEC6}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8AC3A475-6792-4516-8D57-B9E17741B5F4} = {70C55713-79A1-4163-B513-D365607C682E}
-		{06B76B1F-9485-4B9F-9E35-438CA49F74C0} = {70C55713-79A1-4163-B513-D365607C682E}
+		{7CBFE2DC-B573-47F5-B746-7E2217982965} = {70C55713-79A1-4163-B513-D365607C682E}
+		{BA497A0C-1D9B-4189-8AAA-5C99BCE5B1B4} = {70C55713-79A1-4163-B513-D365607C682E}
 		{5DA3ECF3-5C2B-44FB-B98F-88C2B9966240} = {70C55713-79A1-4163-B513-D365607C682E}
+		{1697853E-15E9-4BAB-91E8-F197C4C9EEC6} = {70C55713-79A1-4163-B513-D365607C682E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F940CDAB-2E10-43D0-BD7D-822158ACFDC0}

@@ -1,6 +1,6 @@
 # FileEncoding
 
-中文 | [English](./README.md)
+中文 | [English](README.md)
 
 ## 介绍
 本 Visual Studio 扩展（vsix）在Visual Studio的编辑器边栏的右下角显示文档的编码, 点击后可修改为您指定的编码。
@@ -15,7 +15,7 @@
 
 ## Screenshots
 
-![Preview](docs/screenshots/Preview.png?raw=true "Preview")
+![Preview](Preview.png "Preview")
 
 网上关于UTF-8 BOM的讨论很多，以下观点仅供参考：
 - **UTF-8** (不带BOM)

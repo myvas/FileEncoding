@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="FileEncoding2022.ff8fe5f7-e5dc-4213-a1d1-91ec8d84a049" Version="1.0.32" Language="en-US" Publisher="Myvas" />
-        <DisplayName>FileEncoding 2022</DisplayName>
+        <Identity Id="FileEncoding.ff8fe5f7-e5dc-4213-a1d1-91ec8d84a052" Version="1.0.35" Language="en-US" Publisher="Myvas" />
+        <DisplayName>FileEncoding</DisplayName>
         <Description xml:space="preserve">This Visual Studio Extension will display the charset of current document at the right bottom margin of the editor; Click to popup a contextual menu with a list of encodings and choose the encoding that you want to convert the document to.</Description>
-        <MoreInfo>https://github.com/myvas/FileEncoding</MoreInfo>
         <License>LICENSE.txt</License>
         <Icon>Icon.png</Icon>
         <PreviewImage>Preview.png</PreviewImage>
-        <Tags>Encoding; charset</Tags>
+        <Tags>encoding; charset; UTF-8; BOM</Tags>
     </Metadata>
     <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
-            <ProductArchitecture>amd64</ProductArchitecture>
-        </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
     </Installation>
     <Dependencies>
-        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.7.2,)" />
     </Dependencies>
     <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,18.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
     </Prerequisites>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
