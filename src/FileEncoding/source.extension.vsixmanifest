@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="FileEncoding.ff8fe5f7-e5dc-4213-a1d1-91ec8d84a050" Version="1.0.35" Language="en-US" Publisher="Myvas" />
+        <Identity Id="FileEncoding.ff8fe5f7-e5dc-4213-a1d1-91ec8d84a050" Version="1.0.36" Language="en-US" Publisher="Myvas" />
         <DisplayName>FileEncoding</DisplayName>
         <Description xml:space="preserve">This Visual Studio Extension will display the charset of current document at the right bottom margin of the editor; Click to popup a contextual menu with a list of encodings and choose the encoding that you want to convert the document to.</Description>
         <MoreInfo>https://github.com/myvas/FileEncoding</MoreInfo>
@@ -19,7 +19,7 @@
         <InstallationTarget Version="[15.0,16.0)" Id="Microsoft.VisualStudio.Community" />
     </Installation>
     <Dependencies>
-        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.7.2,)" />
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
     </Dependencies>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,18.0)" DisplayName="Visual Studio core editor" />
